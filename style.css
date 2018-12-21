@@ -45,7 +45,7 @@ body{
     left:0;
     right:0;
     bottom:0;
-    background: var(--brightYellow);
+    background-color:var(--brown);
     z-index: 999;
     display:grid;
     justify-content: center;
@@ -60,7 +60,7 @@ body{
 .preloader img{
  width: 200px;
  height: 200px;
- color:var(--brown)
+ 
 }
 
 
@@ -93,7 +93,7 @@ body{
     color:var(--black);
     border:.2rem solid var(--black);
     border-radius: 50%;
-    padding: .4rem;
+    padding: 1rem;
     transition: all .5s ease-in-out;
     margin: .3rem;
 }
@@ -119,10 +119,11 @@ video{
 }
 
 .nabbtnt{
-    font-size: 4rem;
+    font-size: 3rem;
     color:var(--yellow);
     position: fixed;
     right:4%;
+    top:4%;
     cursor: pointer;
     animation-name: btn;
     animation-fill-mode: forwards;
@@ -146,8 +147,8 @@ video{
 
 .nav{
     position: fixed;
-    background-color: rgba(242,180,80,0.9);
-    opacity: .7;
+    background-color: rgba(243, 173, 60, 0.9);
+    opacity: .8;
     width: 15%;
     top:0;
     left: 0;
@@ -156,6 +157,7 @@ video{
     transition: all .5s ease-in-out;
     width: 0;
     overflow: hidden;
+    z-index: 22;
 
 }
 
@@ -170,7 +172,7 @@ video{
     text-transform: capitalize;
     color:var(--brown);
     font-size: 2rem;
-    padding: .5rem 1rem;
+    padding: 1rem 1rem;
     font-weight: bold;
     transition: all .8s ease-in-out;
 }
@@ -219,6 +221,15 @@ video{
     position: absolute;
     background-color: var(--brown);
     top:0;
-    left: 0;
+    left: 0%;
+    transition: all .5s ease-in-out
+    
+
    
 }
+
+.btn_slide{
+    
+    left:50%;
+}
+
