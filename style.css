@@ -39,9 +39,38 @@ body{
     
 }
 
+.preloader{
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background: var(--brightYellow);
+    z-index: 999;
+    display:grid;
+    justify-content: center;
+    align-items: center;
+    transition: all .7s ease-in-out
+    
+
+}
+
+
+
+.preloader img{
+ width: 200px;
+ height: 200px;
+ color:var(--brown)
+}
+
+
+
 @media screen and (max-width:800px){
     .header{
         background: url('./medias/coffee.jpeg') no-repeat fixed center center / cover;
+    }
+    .video_switch_container{
+        display: none;
     }
   
 }
@@ -119,12 +148,20 @@ video{
     position: fixed;
     background-color: rgba(242,180,80,0.9);
     opacity: .7;
-    width: 10%;
+    width: 15%;
     top:0;
     left: 0;
     bottom:0;
     z-index: 4;
+    transition: all .5s ease-in-out;
+    width: 0;
+    overflow: hidden;
 
+}
+
+.hide-nav{
+   width: 15%;
+   overflow: auto;
 }
 
 .nav_single-link{
@@ -135,6 +172,16 @@ video{
     font-size: 2rem;
     padding: .5rem 1rem;
     font-weight: bold;
+    transition: all .8s ease-in-out;
+}
+
+.nav_single-link:hover{
+ background-color: var(--brown);
+ color:white;
+ padding-left: 2rem;
+}
+.nav_single-link img{
+    border-radius: 50%;
 }
 
 
@@ -144,4 +191,34 @@ video{
     margin: 0;
     position: relative;
     top:10%;
+}
+.video_switch_container{
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    font-size: 2rem;
+    z-index: 4;
+    
+}
+
+.video_switch{
+    position: relative;
+    background-color: var(--yellow);
+    width: 6rem;
+    display: flex;
+    justify-content: space-between;
+    padding: .2rem;
+    cursor: pointer;
+    border-radius: .5rem;
+}
+
+.video_switch-btn{
+    height: 100%;
+    width: 50%;
+    border-radius: .5rem;
+    position: absolute;
+    background-color: var(--brown);
+    top:0;
+    left: 0;
+   
 }
