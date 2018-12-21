@@ -232,4 +232,108 @@ video{
     
     left:50%;
 }
+.work-container{
+    width: 90%;
+    margin: 2rem auto;
+}
+.img{
+    width: 100%;
+    height: 100%;
+    transition: block;
+    opacity: 1;
+    transition: all .8s ease-in-out;
+    
+
+
+}
+
+.item{
+  background-color: var(--yellow);
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+ 
+   
+}
+
+.item:hover .img{
+    opacity: .7;
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.item:hover .work-item_icon{
+    transform: scale(1.2);
+    opacity: 1;
+}
+
+.work-item_icon{
+    text-decoration: none;
+    font-size: 5rem;
+    color:var(--yellow);
+    position: absolute;
+    transition: all .8s ease-in-out;
+    opacity: 0;   
+ 
+    
+}
+
+@media screen and (min-width:576px){
+
+   .work-container{
+       display: grid;
+       grid-template-columns: 1fr 1fr;
+       grid-gap: 1rem;
+   }
+
+   .work-item_icon{
+ 
+    font-size: 4rem;  
+}
+}
+
+@media screen and (min-width:992px){
+
+    .work-container{
+        height: 120vh;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(4,1fr);
+        grid-template-areas: 
+        "item-1 item-1 item-2 item-3"
+        "item-1 item-1 item-4 item-4"
+        "item-5 item-6 item-7 item-7"
+        "item-8 item-9 item-7 item-7"      
+    }
+
+ .item-1{
+       grid-area: item-1;
+} .item-2{
+    grid-area: item-2;
+}
+.item-3{
+    grid-area: item-3;
+}.item-4{
+    grid-area: item-4;
+}.item-5{
+    grid-area: item-5;
+}.item-6{
+    grid-area: item-6;
+}.item-7{
+    grid-area: item-7;
+}.item-8{
+    grid-area: item-8;
+}.item-9{
+    grid-area: item-9;
+}
+
+    .work-item_icon{
+      
+        font-size: 3rem;
+           }
+}
 
