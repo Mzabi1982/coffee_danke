@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css?family=Charm');
+
+
+:root{
+    --brightYellow:#f7c80c;
+    --darkBrown:#bb9457;
+    --yellow:rgb(245, 186, 91);
+    --brown:#382923;
+    --black:#191919;
+    --grey:#e9ecea;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+
+}
+
+
+body{
+ color:var(--black);
+ font-family: 'Charm', cursive;
+ background: linear-gradient(rgba(255,255,255,0.80),rgba(255,255,255,0.80)),url('./medias/breaks.jpeg');
+
+}
+
+.bell-fonts{
+    font-family: 'La Belle Aurore',cursive;
+}
+
+
