@@ -9,7 +9,7 @@ setTimeout(()=>{
    document.querySelector('.preloader').style.display="none";
   
 
-},2000) )
+},50) )
 
 
 btn.addEventListener('click',()=>{
