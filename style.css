@@ -400,10 +400,12 @@ video{
 }
 
 .modal_img{
-    background: url('./medias/image2.jpeg') no-repeat center center / cover;
     width: 80vw;
     height: 70vh;
     border:.3rem solid var(--yellow);
+    transition: all .5s ease-in-out;
+    background: no-repeat center center / cover;
+    
 }
 
 @media screen and (min-width:760px){
@@ -481,3 +483,115 @@ margin: 1rem;
     }
     
 }
+
+#drink{
+
+background-color: var(--brown);
+color:var(--brightYellow);
+text-transform: capitalize;
+padding: 3rem;
+}
+
+.drink-form,.drink-card{
+    text-align: center;
+    display: grid;
+    grid-template-columns: 70vh;
+    justify-content: center;
+    grid-row-gap: 1.2rem;
+}
+.drink-feedback{
+    border:.2rem solid var(--brightYellow);
+    padding: .2rem;
+    display: none;
+}
+
+.error{
+    display: block;
+    color:red;
+    border:.2rem solid red;
+
+}
+.success{
+    display: block;
+    color:green;
+    border:.2rem solid green;
+
+}
+
+.drink-card-title,.form-title{
+font-size: 3rem;
+}
+
+input{
+    width: 100%;
+    border-radius: .5rem;
+    background: rgba(111,87,77,0.6);
+    font-size: 1rem;
+    padding: .3rem;
+    border:none;
+    outline: none;
+    color:var(--brightYellow);
+    
+}
+
+input::placeholder{
+    text-transform: capitalize;
+    color:var(--darkBrown);
+    
+}
+
+.input-submit{
+    background: var(--brightYellow);
+    color:var(--black);
+    transition: all .5s linear;
+    cursor: pointer;
+    text-transform: uppercase;
+
+}
+
+.input-submit:hover{
+    opacity: .5;
+}
+.drink-card{
+    width: 100%;
+}
+
+.card-list{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-row-gap: 2rem;
+    margin: auto;
+    width: 100%;
+}
+
+.person{
+    display: grid;
+    grid-template-columns: auto 2fr 1fr;
+    align-items: center;
+    text-align: left;
+    grid-gap:1rem;
+    grid-row-gap: 1rem;
+    border:.1rem solid rgba(111,87,77,.6);
+    padding: .2rem;
+    border-radius: .5rem;
+
+    
+}
+
+.person img{
+    border-radius: 50%;
+}
+
+@media screen and (min-width:760px){
+    .card-list{
+        
+        grid-template-columns: 1fr 1fr;
+       
+
+    }
+}
+
+
+
+
+

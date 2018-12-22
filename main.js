@@ -29,7 +29,7 @@ tab.forEach(val=>{
 })
 
 btnclose.addEventListener('click',()=>{
-    modal.style.display="none";
+    modal.classList.remove('modal-show');
 
 })
 
