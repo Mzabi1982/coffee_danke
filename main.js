@@ -1,7 +1,38 @@
 const btn=document.querySelector('.nabbtnt');
 const nav=document.querySelector('.nav');
 const video_switch=document.querySelector('.video_switch_container');
-const btn_video=document.querySelector('.video_switch-btn')
+const btn_video=document.querySelector('.video_switch-btn');
+const tab=document.querySelectorAll('.item');
+const modal_img=document.querySelector('.modal_img')
+const btnclose=document.querySelector('.fa-window-close');
+const modal=document.querySelector('.modal');
+
+//console.log(tab);
+
+tab.forEach(val=>{
+    val.addEventListener('click',(e)=>{
+      e.preventDefault();
+        console.log(e.target.parentElement);
+
+     if(e.target.parentElement.classList.contains('work-item_icon')){
+            let id=e.target.parentElement.dataset.id;
+           // console.log(id);
+           modal.classList.add('modal-show');
+           btnclose.style.display="block";
+           modal_img.style.backgroundImage=`url("./medias/${id}.jpeg")`;
+           
+           
+         }
+
+
+    })
+})
+
+btnclose.addEventListener('click',()=>{
+    modal.style.display="none";
+
+})
+
 
 window.addEventListener('load',()=>
  

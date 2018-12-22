@@ -348,8 +348,12 @@ video{
         font-size: 3rem;
            }
 }
-
 .modal{
+    transition: all .5s ease-in-out;
+    display: none;
+
+}
+.modal-show{
     position: fixed;
     background: rgba(0,0,0,0.5);
     top:0;
@@ -360,17 +364,35 @@ video{
     display: grid;
     justify-content: center;
     align-items: center;
+    
+    
 }
+
 
 .fa-window-close{
     position: absolute;
     font-size: 2rem;
     color:var(--yellow);
-    right: 5%;
-    bottom: 15%;
+    right: 15%;
+    bottom: 7%;
     cursor: pointer;
     transition: all .5s ease-out;
+    display: none;
 
+}
+
+@media screen and (max-width:500px){
+    .fa-window-close{
+       right: 10%;
+      
+    
+    }
+}
+@media screen and (max-width:700px){
+    .fa-window-close{
+       right: 10%;
+    
+    }
 }
 
 .fa-window-close:hover{
@@ -381,7 +403,15 @@ video{
     background: url('./medias/image2.jpeg') no-repeat center center / cover;
     width: 80vw;
     height: 70vh;
-    
+    border:.3rem solid var(--yellow);
+}
+
+@media screen and (min-width:760px){
+    .modal_img{
+        width: 60vw;
+        height: 80vh;
+        
+    }
 }
 
 
