@@ -66,6 +66,46 @@ video_switch.addEventListener('click',()=>{
 })
 
 
+window.sr = ScrollReveal();
+
+
+
+sr.reveal('.banner_title', {
+    duration: 4000,
+    origin:'top',
+    distance:'300px'
+  
+  });
+
+  sr.reveal('#first', {
+    duration: 2000,
+    origin:'left',
+    distance:'300px'
+  
+  });
+
+  sr.reveal('#second', {
+    duration: 2000,
+    origin:'right',
+    distance:'300px'
+  
+  });
+
+  sr.reveal('.banner_ions #fon1', {
+    duration: 2000,
+    origin:'left',
+    distance:'300px'
+  
+  });
+
+  sr.reveal('#fon2', {
+    duration: 3000,
+    origin:'left',
+    distance:'300px'
+  
+  });
+
+
 
 
  
