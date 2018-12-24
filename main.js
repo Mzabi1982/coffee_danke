@@ -40,7 +40,7 @@ setTimeout(()=>{
    document.querySelector('.preloader').style.display="none";
   
 
-},50) )
+},2000) )
 
 
 btn.addEventListener('click',()=>{
