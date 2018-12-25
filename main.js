@@ -147,7 +147,7 @@ const removealert=(value)=>{
     setTimeout(()=>{
         document.querySelector('.drink-feedback').classList.remove(value);
 
-    },1500)
+    },1000)
 }
 
 
@@ -158,7 +158,7 @@ const removealert=(value)=>{
 window.sr = ScrollReveal();
 
 sr.reveal('.banner_title', {
-    duration: 4000,
+    duration: 6000,
     origin:'top',
     distance:'300px'
   
@@ -178,14 +178,26 @@ sr.reveal('.banner_title', {
   
   });
 
-  sr.reveal('.banner_ions #fon1', {
-    duration: 2000,
+  sr.reveal('.banner_social_icons', {
+    duration: 6000,
     origin:'left',
     distance:'300px'
   
   });
 
   sr.reveal('#fon2', {
+    duration: 5000,
+    origin:'left',
+    distance:'300px'
+  
+  });
+  sr.reveal('#fon3', {
+    duration: 4000,
+    origin:'left',
+    distance:'300px'
+  
+  });
+  sr.reveal('#fon4', {
     duration: 3000,
     origin:'left',
     distance:'300px'
