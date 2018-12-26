@@ -1,3 +1,4 @@
+$( document ).ready(()=>$('.banner_social_icons').click(false));
 const btn=document.querySelector('.nabbtnt');
 const nav=document.querySelector('.nav');
 const video_switch=document.querySelector('.video_switch_container');
