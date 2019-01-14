@@ -299,6 +299,7 @@ video{
 
 
 
+
 @media screen and (min-width:576px){
 
    .work-container{
@@ -432,11 +433,13 @@ video{
 }
 
 .grid-container{
-    max-width: 90vw;
-    margin: 2rem auto;
+    width: 80%;
+    margin: auto;
     display: grid;
     grid-row-gap: 3rem;
 }
+
+
 
 .section-title{
     padding: 2rem 1rem;
@@ -495,14 +498,17 @@ background-color: var(--brown);
 color:var(--brightYellow);
 text-transform: capitalize;
 padding: 3rem;
+width: 100%;
+
 }
 
 .drink-form,.drink-card{
     text-align: center;
     display: grid;
-    grid-template-columns: 70vh;
+    grid-template-columns: 80%;
     justify-content: center;
     grid-row-gap: 1.2rem;
+     
 }
 .drink-feedback{
     border:.2rem solid var(--brightYellow);
