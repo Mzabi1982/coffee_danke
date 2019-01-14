@@ -177,8 +177,8 @@ video{
 }
 
 .hide-nav{
-   width: 15%;
-   overflow: auto;
+   width: 20%;
+   
 }
 
 .nav_single-link{
@@ -393,6 +393,12 @@ video{
       
     
     }
+
+    .nav_single-link{
+        font-size: 1.2rem;
+    }
+
+    
 }
 @media screen and (max-width:700px){
     .fa-window-close{
