@@ -27,6 +27,7 @@ body{
  color:var(--black);
  font-family: 'Charm', cursive;
  background: linear-gradient(rgba(255,255,255,0.80),rgba(255,255,255,0.80)),url('./medias/breaks.jpeg');
+ overflow-x: hidden;
 
 }
 
