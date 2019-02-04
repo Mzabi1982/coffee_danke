@@ -2,9 +2,9 @@
 
 
 :root{
-    --brightYellow:#f7c80c;
-    --darkBrown:#bb9457;
-    --yellow:rgb(245, 186, 91);
+    --brightYellow:#627483;
+    --darkBrown:#577fbb;
+    --yellow:rgb(222, 231, 198);
     --brown:#382923;
     --black:#191919;
     --grey:#e9ecea;
@@ -163,7 +163,7 @@ video{
 
 .nav{
     position: fixed;
-    background-color: rgba(243, 173, 60, 0.9);
+    background-color: var(--yellow);
     opacity: .8;
     width: 15%;
     top:0;
@@ -672,6 +672,8 @@ input::placeholder{
          }   
     
     }
+
+    
 
 
 
