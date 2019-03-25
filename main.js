@@ -159,7 +159,7 @@ const removealert=(value)=>{
 window.sr = ScrollReveal();
 
 sr.reveal('.banner_title', {
-    duration: 6000,
+    duration: 2000,
     origin:'top',
     distance:'300px'
   
@@ -180,26 +180,26 @@ sr.reveal('.banner_title', {
   });
 
   sr.reveal('.banner_social_icons', {
-    duration: 6000,
+    duration: 2000,
     origin:'left',
     distance:'300px'
   
   });
 
   sr.reveal('#fon2', {
-    duration: 5000,
+    duration: 2000,
     origin:'left',
     distance:'300px'
   
   });
   sr.reveal('#fon3', {
-    duration: 4000,
+    duration: 2000,
     origin:'left',
     distance:'300px'
   
   });
   sr.reveal('#fon4', {
-    duration: 3000,
+    duration: 2000,
     origin:'left',
     distance:'300px'
   

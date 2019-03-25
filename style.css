@@ -52,10 +52,12 @@ body{
     bottom:0;
     background-color:var(--brown);
     z-index: 999;
-    display:grid;
+    transition: all .7s ease-in-out;
+    display: grid;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    transition: all .7s ease-in-out;
+    align-content: center;
     
     
 
@@ -66,22 +68,25 @@ body{
 .preloader img{
  width: 200px;
  height: 200px;
- 
+
+
 }
 
 
 
 @media screen and (max-width:800px){
-   
+    .header{
+        background: url('./medias/coffee.jpeg') no-repeat fixed center center / cover;
+    }
     .banner_title,.bell-fonts{
         display: none;
     }
 
+   
+
     a{
         padding:1rem 1rem;
         font-size: 1rem;
-        margin-left: -.7rem;
-        
         
     }
     .video_switch_container{
@@ -313,6 +318,8 @@ video{
  
     font-size: 4rem;  
 }
+
+
 }
 
 @media screen and (min-width:992px){
