@@ -45,13 +45,13 @@ body {
 
 }
 
-/* .preloader{
+.preloader {
     position: fixed;
-    top:0;
-    left:0;
-    right:0;
-    bottom:0;
-    background-color:var(--brown);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--brown);
     z-index: 999;
     transition: all .7s ease-in-out;
     display: grid;
@@ -59,10 +59,10 @@ body {
     justify-content: center;
     align-items: center;
     align-content: center;
-    
-    
 
-} */
+
+
+}
 
 
 
