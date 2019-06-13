@@ -154,51 +154,51 @@ const removealert = (value) => {
 
 
 
-//window.sr = ScrollReveal();
+window.sr = ScrollReveal();
 
-sr.reveal('.banner_title', {
-  duration: 2000,
-  origin: 'top',
-  distance: '300px'
+// sr.reveal('.banner_title', {
+//   duration: 2000,
+//   origin: 'top',
+//   distance: '300px'
 
-});
+// });
 
 sr.reveal('#first', {
   duration: 2000,
-  origin: 'left',
-  distance: '300px'
+  origin: 'top',
+  distance: '100px'
 
 });
 
 sr.reveal('#second', {
   duration: 2000,
-  origin: 'right',
-  distance: '300px'
+  origin: 'bottom',
+  distance: '100px'
 
 });
 
-sr.reveal('.banner_social_icons', {
-  duration: 2000,
-  origin: 'left',
-  distance: '300px'
+// sr.reveal('.banner_social_icons', {
+//   duration: 2000,
+//   origin: 'left',
+//   distance: '300px'
 
-});
+// });
 
-sr.reveal('#fon2', {
-  duration: 2000,
-  origin: 'left',
-  distance: '300px'
+// sr.reveal('#fon2', {
+//   duration: 2000,
+//   origin: 'left',
+//   distance: '300px'
 
-});
-sr.reveal('#fon3', {
-  duration: 2000,
-  origin: 'left',
-  distance: '300px'
+// });
+// sr.reveal('#fon3', {
+//   duration: 2000,
+//   origin: 'left',
+//   distance: '300px'
 
-});
-sr.reveal('#fon4', {
-  duration: 2000,
-  origin: 'left',
-  distance: '300px'
+// });
+// sr.reveal('#fon4', {
+//   duration: 2000,
+//   origin: 'left',
+//   distance: '300px'
 
-});
+// });
